@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path, include
 from apps.accounts.admin.admin_site import hospital_admin_site
-from requests import Response
+from rest_framework.response import Response
 
 from rest_framework import permissions, viewsets, status
 from drf_yasg.views import get_schema_view
@@ -48,7 +48,7 @@ urlpatterns = [
     path('', include('apps.accounts.urls')),
     path('api/accounts/', include('apps.accounts.urls')),
     path('api/master-data/', include('apps.master_data.urls')),
-    path('api/appointments/', include('apps.appointments.urls')), # <--- NÊN CÓ Ở ĐÂY
+    path('api/appointments/', include('apps.appointments.urls')),
     path('api/clinical/', include('apps.clinical.urls')),
     path('api/pharmacy/', include('apps.pharmacy.urls')),
     path('admin/', hospital_admin_site.urls),

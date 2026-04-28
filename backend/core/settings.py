@@ -14,6 +14,8 @@ from pathlib import Path
 
 from django.conf.global_settings import AUTH_USER_MODEL, ALLOWED_HOSTS
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -79,7 +81,7 @@ MIDDLEWARE = [
 CORS_ALLOW_ALL_ORIGINS=True
 
 
-OAUTH2_PROVIDER = { 'OAUTH2_BACKEND_CLASS': 'oauth2_provider.oauth2_backends.JSONOAuthLibCore' }
+# OAUTH2_PROVIDER = { 'OAUTH2_BACKEND_CLASS': 'oauth2_provider.oauth2_backends.JSONOAuthLibCore' }
 
 ROOT_URLCONF = 'core.urls'
 
@@ -161,5 +163,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CLIENT_ID = '9rufKdtGbXooau8Z85lde86HJS4NzlhELnAzSbgR'
-CLIENT_SECRET = 'EncHFn4ex1Jzkmv3cZTCAqmZlnQ9UfSSwPwOOEAg4HyTCky8B7sPQXhUSZAvtjlffOUzsyQDS3VOF9EHvHk0Cor8PeLNAbfXc9KhJOJYx6pUiJSnMQcx6l3FUYGz9hjW'
+CLIENT_ID = 'SEVZELbza9IEYhpKsTrcXlMfO85Qv0DmV0S0IW7n'
+CLIENT_SECRET = 'xNgFBOpSxDGFPM3aBarH9vktdIhgYLSg9S8Sk39m7FR25AhKhi9Qd9zXRwh8ndMiDVdqQMDLtyqSIBwJdLdUy0OqRjqAXQPi7TDdEmtKHay0o9Z26E2O00kVMP3PGCoP'

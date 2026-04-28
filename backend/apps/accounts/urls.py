@@ -1,9 +1,10 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from core.urls import GlobalPlaceholderViewSet
+
+from apps.accounts.api.views import UserViewSet
 
 router = DefaultRouter()
-router.register('users', GlobalPlaceholderViewSet, basename='medicine')
+router.register('users', UserViewSet, basename='user')
 
 urlpatterns = [
     path('', include(router.urls)),
